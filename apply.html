@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başvuru Formu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/view.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="services.html">Hizmetler</a>
+            <a href="apply.html">Başvuru</a>
+            <a href="contact.html">İletişim</a>
+        </div>
+        <div class="nav-right">
+            <span id="user-name"></span>
+            <a id="login-link" href="login.html">Giriş Yap</a>
+            <a id="register-link" href="register.html">Kayıt Ol</a>
+        </div>
+    </nav>
+
+    <section>
+        <h1>İş Başvurusu</h1>
+        <form id="apply-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">İsim:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Soyisim:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Adres:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Başvurulacak Pozisyon:</label>
+                <select id="position" name="position">
+                    <option value="Yazılım Geliştirici">Yazılım Geliştirici</option>
+                    <option value="Proje Yöneticisi">Proje Yöneticisi</option>
+                    <option value="Danışman">Danışman</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cv">CV Yükle:</label>
+                <input type="file" id="cv" name="cv" required>
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Fotoğraf Yükle:</label>
+                <input type="file" id="photo" name="photo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="captcha-question">Güvenlik Kodu:</label>
+                <div id="captcha-question"></div>
+                <input type="hidden" id="captcha-answer" name="captcha-answer">
+                <input type="text" id="captcha" name="captcha" required>
+            </div>
+            
+            <input type="submit" value="Başvur">
+        </form>
+        <div id="message-container"></div>
+    </section>
+</body>
+</html>

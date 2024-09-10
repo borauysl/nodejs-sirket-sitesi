@@ -1,0 +1,155 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-left a,
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    background-color: #575757;
+}
+
+.nav-left {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+#user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#login-link {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#login-link:hover {
+    background-color: #575757;
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#login-warning {
+    background-color: #ffdddd;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: none; 
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #575757;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}

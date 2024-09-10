@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/view.js" defer></script>
+    <style>
+        .message {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+        .success {
+            background-color: green;
+        }
+        .error {
+            background-color: red;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="services.html">Hizmetler</a>
+            <a href="apply.html">Başvuru</a>
+            <a href="contact.html">İletişim</a>
+        </div>
+        <div class="nav-right">
+            <span id="user-name"></span>
+            <a id="login-link" href="login.html">Giriş Yap</a>
+            <a id="register-link" href="register.html">Kayıt Ol</a>
+        </div>
+    </nav>
+
+    <section>
+        <h1>Giriş Yap</h1>
+        <form id="login-form" onsubmit="handleLoginFormSubmit(event)">
+            <div class="form-group">
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <input type="submit" value="Giriş Yap">
+        </form>
+        <div id="message-container" class="message"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Şirket Adı - XYZ Cadde No:123</p>
+        <p>Email: info@sirket.com - Telefon: 0123 456 789</p>
+    </footer>
+</body>
+</html>
